@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+	<title>Logan Litman</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet"> <!--FONT-->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet" type="text/css"> <!--SASS CSS-->
+  <script   src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap-reboot.min.css">
+  <link src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
+  <style>
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: white;
+        opacity: 0.98;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+    
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: -40px;
+    }
+    
+    .overlay a {
+        font-family: Raleway, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding: 8px;
+        text-decoration: none;
+        font-size: 20px;
+        color: grey;
+        display: block;
+        transition: 0.3s;
+    }
+    
+    .overlay a:hover, .overlay a:focus {
+        color: #001487;
+    }
+    
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+    
+    @media screen and (max-height: 450px) {
+      .overlay a {font-size: 20px}
+      .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+      }
+    }
+    
+    .hamburger {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0; 
+        float: right;
+        cursor: pointer;
+        padding-top: 7px;
+        padding-right: 15px;
+    }
+    
+</style>
+    
+    <body>
+
+        <img src="images/litman_logan_logo.svg" width="300px" id="logo">
+    
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="index.html">About</a>
+        <a href="work.html">My Work</a>
+        <p><a class="mailto" href="purevolume.html">Pure Volume Media</a>
+          <a class="mailto" href="lsfc.html">London Squash & Fitness Club</a>
+          <a class="mailto" href="sl.html">StreamLine Water Bottle</a>
+          <a class="mailto" href="ehpc.html">Elite Hockey Prospect Camps</a>
+          <a class="mailto" href="freelance.html">Club Media</a>
+          <a class="mailto" href="thermosecure.html">ThermoSecure Thermostat</a>
+        </p>
+        <a href="contact.html">Contact</a>
+        <p><a class="mailto" href="mailto:loganlitman@gmail.com">Like what you see? Let's collaborate.</a><br />
+        <a class="mailto"href="https://www.linkedin.com/in/logan-litman-070b49145/"><img class="icon" src="images/linkedin.png" alt="twitter" width="10" height="10"> &nbsp;Let's connect.</a>
+        </p>
+
+        <p class="by">Made with love, by Logan Litman</p>
+      </div>
+    </div>
+    
+    <span class="hamburger" onclick="openNav()"><img src="images/hamburger-lines.png" width="30"></span>
+    
+    <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    </script>
+
+</head>
+
+    <br /><br />
+
+
+        <div class="row">
+            <div class="col-sm-10 offset-1">
+              <p class="thermo"><b>Thermostat Complete Product, Website, & Brand Design. London, ON</b></p>
+              <p class="about">In October of 2018, one of the projects assigned to us at Fanshawe College, was to get into groups of four
+                and completely design, brand, and create a website for a thermostat in 8 hours; "ThermoSecure". This project was treated as 
+                our midterm. <br/><br />
+                Me and my group began by designing the thermostat using Cinema 4D, and then created the logo and name.
+                We wanted it to be obvious that our product was a thermostat, so we kept that in mind when creating the name. As we 
+                began creating the logo, we wanted to embody comfort, cooling, and migrating several temperatures. To do this, we 
+                decided to showcase four seperate triangles in our logo - each meaning different temperatures and comfort levels, and having 
+                them connect in the middle. Once this was complete, we began designing the UI, UX, and website for the product.
+                Below are the final images and assets we came up with.<br /><br />
+              </p>
+            </div>
+          </div>
+      
+      
+          <div class="container align-items-center imgs">
+          <div>
+            <img src="images/thermo/thermo8.png" width="550">
+            <img src="images/thermo/thermosecure.png" width="550" height="410" id="main-thermo-img-small">
+          </div>
+      
+          <div>
+              <img src="images/thermo/thermo9.png" width="550" height="370">
+              <img src="images/thermo/thermo7.png" width="550" height="370">
+            </div>
+
+            <div>
+                <img src="images/thermo/thermo6.png" width="700" class="lsfcposter">
+                <img src="images/thermo/midterm-logo.svg" width="400">
+              </div>
+      
+          <div>
+              <img src="images/thermo/gui-desktop-square.jpg" width="268">
+              <img src="images/thermo/gui-home-square.jpg" width="268">
+              <img src="images/thermo/gui-mobile-square.jpg" width="268">
+              <img src="images/thermo/gui-watch-square.jpg" width="268">
+            </div>
+          </div>
+
+      <br /><br />
+
+                           
+
+<a class="prev-button" href="freelance.html"> // Previous Project</a>
+<a class="next-button" href="purevolume.html">Next Project //</a><br /><br />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+<script   src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/main.js"></script>
+
+  </body>
+</html>

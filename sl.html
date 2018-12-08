@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+	<title>Logan Litman</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet"> <!--FONT-->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet" type="text/css"> <!--SASS CSS-->
+  <script   src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script   src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap-reboot.min.css">
+  <link src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
+  <style>
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: white;
+        opacity: 0.98;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+    
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: -40px;
+    }
+    
+    .overlay a {
+        font-family: Raleway, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding: 8px;
+        text-decoration: none;
+        font-size: 20px;
+        color: grey;
+        display: block;
+        transition: 0.3s;
+    }
+    
+    .overlay a:hover, .overlay a:focus {
+        color: #001487;
+    }
+    
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+    
+    @media screen and (max-height: 450px) {
+      .overlay a {font-size: 20px}
+      .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+      }
+    }
+    
+    .hamburger {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0; 
+        float: right;
+        cursor: pointer;
+        padding-top: 7px;
+        padding-right: 15px;
+    }
+    
+</style>
+    
+    <body>
+
+        <img src="images/litman_logan_logo.svg" width="300px" id="logo">
+    
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="index.html">About</a>
+        <a href="work.html">My Work</a>
+        <p><a class="mailto" href="purevolume.html">Pure Volume Media</a>
+          <a class="mailto" href="lsfc.html">London Squash & Fitness Club</a>
+          <a class="mailto" href="sl.html">StreamLine Water Bottle</a>
+          <a class="mailto" href="ehpc.html">Elite Hockey Prospect Camps</a>
+          <a class="mailto" href="freelance.html">Club Media</a>
+          <a class="mailto" href="thermosecure.html">ThermoSecure Thermostat</a>
+        </p>
+        <a href="contact.html">Contact</a>
+        <p><a class="mailto" href="mailto:loganlitman@gmail.com">Like what you see? Let's collaborate.</a><br />
+        <a class="mailto"href="https://www.linkedin.com/in/logan-litman-070b49145/"><img class="icon" src="images/linkedin.png" alt="twitter" width="10" height="10"> &nbsp;Let's connect.</a>
+        </p>
+
+        <p class="by">Made with love, by Logan Litman</p>
+      </div>
+    </div>
+    
+    <span class="hamburger" onclick="openNav()"><img src="images/hamburger-lines.png" width="30"></span>
+    
+    <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    </script>
+
+</head>
+    <br /><br />
+
+
+        <div class="row">
+            <div class="col-sm-10 offset-1">
+              <p class="sl"><b>StreamLine Water Bottle Creation & Branding. London, ON.</b></p>
+              <p class="about">At Fanshawe College, in November of 2018, we were assigned a partnered integrated project of completely creating,
+                 branding, and commercializing an infuser bottle. We were given complete freedom to choose what we felt looked best,
+                 and embodied our work as designers. My parter and I took a spin on a more modernized bottle of the extremely popular
+                 Swell bottle. By giving it slanted lines, a unique logo, and an infuser piece, we felt that we gave it a touch of our 
+                 design expertise.
+                 <br /><br />
+                To begin, we drafted out the original designs of the bottle, and from there took it into Cinema 4D. We then sculpted,
+                and textured the bottle so that it embodied our exact vision and would look as realistic as possible. Once we rendered out
+                our images and clips of the bottle, we began our branding process. We created a commercial (which can be seen below), and 
+                branding guidelines that specified everything we envisioned for the brand. Below, you can scroll through some of the assets
+                that were created for the StreamLine bottle. <br /><br>
+              </p>
+            </div>
+          </div>
+      
+      
+          <div class="container align-items-center imgs">
+            
+              <div class="vid-sec">
+                  <img src="images/sl/busstop.png" width="550" height="310">                
+                  <video src="images/sl/infuser bottle video.mp4" width="550" height="310" id="vid2" muted autoplay controls></video>
+
+              </div>
+
+              <div>
+                  <img src="images/sl/mgazine.png" width="550" height="410">
+                  <img src="images/sl/oceans.png" width="550"  height="410">
+              </div>
+
+              <div>
+                  <img src="images/sl/logo1.png" width="550">
+                  <img src="images/sl/logo2.png" width="550">
+              </div>
+
+              <div>
+                  <img src="images/sl/color.png" width="550">
+                  <img src="images/sl/identity.png" width="550">
+              </div>
+
+          </div>
+
+          <br />
+
+                            
+
+<a class="prev-button" href="lsfc.html"> // Previous Project</a>
+<a class="next-button" href="ehpc.html">Next Project //</a><br /><br />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+<script   src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/main.js"></script>
+
+  </body>
+</html>

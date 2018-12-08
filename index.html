@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet"> <!--FONT-->
+      <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+      <title>Logan Litman</title>
+    <link href="css/bootstrap.css" rel="stylesheet"><!--BOOTSTRAP stylesheet-->
+    <link href="css/main.css" rel="stylesheet" type="text/css"> <!--CSS-->
+    <link href="css/animate.css" rel="stylesheet"> <!--ANIMATE.CSS-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <link src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap-reboot.min.css">
+    <link src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/main-waypoint.js"></script>
+    <script src="js/noframework-waypoints-min.js"></script>
+    <style>
+        .overlay {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: white;
+            opacity: 0.98;
+            overflow-x: hidden;
+            transition: 0.5s;
+        }
+        
+        .overlay-content {
+            position: relative;
+            top: 25%;
+            width: 100%;
+            text-align: center;
+            margin-top: -40px;
+        }
+        
+        .overlay a {
+            font-family: Raleway, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 8px;
+            text-decoration: none;
+            font-size: 20px;
+            color: grey;
+            display: block;
+            transition: 0.3s;
+        }
+        
+        .overlay a:hover, .overlay a:focus {
+            color: #001487;
+        }
+        
+        .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+        }
+        
+        @media screen and (max-height: 450px) {
+          .overlay a {font-size: 20px}
+          .overlay .closebtn {
+            font-size: 40px;
+            top: 15px;
+            right: 35px;
+          }
+        }
+        
+        .hamburger {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0; 
+            float: right;
+            cursor: pointer;
+            padding-top: 7px;
+            padding-right: 15px;
+        }
+        
+    </style>
+        
+        <body>
+
+            <img src="images/litman_logan_logo.svg" width="300px" id="logo">
+        
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="index.html">About</a>
+            <a href="work.html">My Work</a>
+            <p><a class="mailto" href="purevolume.html">Pure Volume Media</a>
+              <a class="mailto" href="lsfc.html">London Squash & Fitness Club</a>
+              <a class="mailto" href="sl.html">StreamLine Water Bottle</a>
+              <a class="mailto" href="ehpc.html">Elite Hockey Prospect Camps</a>
+              <a class="mailto" href="freelance.html">Club Media</a>
+              <a class="mailto" href="thermosecure.html">ThermoSecure Thermostat</a>
+            </p>
+            <a href="contact.html">Contact</a>
+            <p><a class="mailto" href="mailto:loganlitman@gmail.com">Like what you see? Let's collaborate.</a><br />
+            <a class="mailto"href="https://www.linkedin.com/in/logan-litman-070b49145/"><img class="icon" src="images/linkedin.png" alt="twitter" width="10" height="10"> &nbsp;Let's connect.</a>
+            </p>
+
+            <p class="by">Made with love, by Logan Litman</p>
+          </div>
+        </div>
+        
+        <span class="hamburger" onclick="openNav()"><img src="images/hamburger-lines.png" width="30"></span>
+        
+        <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+        </script>
+
+  </head>
+
+    <div class="content row">
+      <div class="col-sm-12 offset-3">
+
+        
+        <h1 id="im-logan"><br /><br /> Hi, <br />I'm Logan.</h1>
+        
+        <main id="app">
+        <p> {{ message }}<br />Intrigued? <a href="#about">Learn more about me.</a><br /><a href="#video">// View my Reel</a><a href="work.html"><br>// Check out my Portfolio</a></p>
+        </main>  
+
+           <div class="container" id="infographic">
+             
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                    viewBox="0 0 499.4 325.7" style="enable-background:new 0 0 499.4 325.7;" xml:space="preserve">
+                      <style type="text/css">
+                        .st0{fill:#001487;}
+                        .st1{font-family:'Raleway-Regular';}
+                        .st2{font-size:30px;}
+                        .st3{fill:none;stroke:#001487;stroke-miterlimit:10;}
+                      </style>
+                      <g id="skills-text">
+                        <text transform="matrix(1 0 0 1 149.4372 55.6655)" class="st0 st1 st2">Graphic Design</text>
+                        <text transform="matrix(1 0 0 1 149.4372 128.6655)" class="st0 st1 st2">Front-end Development</text>
+                        <text transform="matrix(1 0 0 1 149.4372 212.6655)" class="st0 st1 st2">Photography</text>
+                        <text transform="matrix(1 0 0 1 149.4372 285.6655)" class="st0 st1 st2">Animation</text>
+                      </g>
+                      <g id="ICONS">
+                        <g id="ROLLER">
+                          <polyline class="st3" points="72.3,34.8 75.2,35 75.2,42.4 58.2,45.3 58.2,49.8 		"/>
+                          <path class="st3" d="M48.4,39.4v6.6c0,0,1.7,1.5,3.2,0v-6.6"/>
+                          <polygon class="st3" points="44.9,29.8 72.3,29.8 72.3,39.4 44.9,39.4 44.9,32.6 		"/>
+                          <path class="st3" d="M56,60.8v-9.6c0,0,0.7-1.4,1.8-1.3c0.5,0,1.2,0.4,1.8,1.3v9.6C59.7,60.8,58.2,63.8,56,60.8z"/>
+                          <path class="st3" d="M53.5,39.4v3c0,0,1.7,3,3.2,0v-3"/>
+                          <polyline class="st3" points="44.9,37.2 43.5,37.2 42.7,36.5 42.7,32.8 43.5,32 44.9,32 		"/>
+                        </g>
+                        <g id="PEN-AND-PENCIL">
+                          <rect x="50.5" y="99.3" class="st3" width="6.8" height="26.6"/>
+                          <line class="st3" x1="53.9" y1="136.1" x2="53.9" y2="132.7"/>
+                          <polygon class="st3" points="52.5,132.7 55.9,132.7 56.6,130.6 51.8,130.6 		"/>
+                          <line class="st3" x1="54.5" y1="132.7" x2="54.5" y2="136.1"/>
+                          <line class="st3" x1="50.5" y1="125.9" x2="51.8" y2="130.6"/>
+                          <line class="st3" x1="57.3" y1="125.9" x2="56.6" y2="130.6"/>
+                          <line class="st3" x1="50.5" y1="102.1" x2="57.3" y2="102.1"/>
+                          <polyline class="st3" points="50.5,100.7 47.7,100.7 47.7,111.6 		"/>
+                          <polyline class="st3" points="51.8,99.3 51.8,95.2 56.6,95.2 56.6,99.3 		"/>
+                          <g id="PENCIL">
+                            <line class="st3" x1="65.1" y1="97.6" x2="69.9" y2="97.6"/>
+                            <polygon class="st3" points="63.7,98.3 63.7,125.5 64.1,126.7 65.8,132.1 65.9,132.6 67.1,136.4 70.7,126.9 71.2,125.5 
+                              71.2,98.3 69.9,98.3 69.9,94.9 65.1,94.9 65.1,98.3 			"/>
+                            <polygon class="st3" points="66.1,131.3 68.8,131.3 67.5,135.4 			"/>
+                            <line class="st3" x1="63.9" y1="126" x2="71" y2="126"/>
+                          </g>
+                        </g>
+                        <path id="camera" class="st3" d="M77.2,171.1v11.6h-5.6v-1.3H60.8v-0.9H57c0,0,0.4,2.2-2.6,2.2v1.3c0,0,3.9,2.6,1.3,6l6.5,32.3h-3
+                          l-5.2-28v28h-2.6l-0.4-24.2l-5.6,24.2h-2.6l6.9-31.9c0,0-3-3.9,0.9-6.5v-1.3c0,0-3.5,0.9-3-3.4v-6c0,0,0-2.2,2.2-2.2l0.4-2.2h3.9
+                          l0.4,2.2c0,0,1.7-0.4,3,1.7h3.4v-0.9h8.6v2.2c0,0,0,1.3,0.9,1.3c0.9,0,0.9-1.3,0.9-1.3v-3H77.2z"/>
+                        <g id="PERSON">
+                          <line class="st3" x1="56.7" y1="299.6" x2="60.2" y2="302"/>
+                          <line class="st3" x1="61.3" y1="289.7" x2="56.7" y2="299"/>
+                          
+                            <ellipse transform="matrix(0.1826 -0.9832 0.9832 0.1826 -204.1233 269.5505)" class="st3" cx="60" cy="257.5" rx="5.7" ry="4.4"/>
+                          
+                            <ellipse transform="matrix(0.1826 -0.9832 0.9832 0.1826 -218.1319 275.3132)" class="st3" cx="56.5" cy="268.8" rx="5.9" ry="4.4"/>
+                          
+                            <ellipse transform="matrix(4.412721e-02 -0.999 0.999 4.412721e-02 -226.2054 319.9293)" class="st3" cx="54.1" cy="278.2" rx="3.9" ry="3"/>
+                          <line class="st3" x1="61.9" y1="267" x2="70.1" y2="276.3"/>
+                          <line class="st3" x1="71.2" y1="276.3" x2="78.2" y2="275.8"/>
+                          <line class="st3" x1="51.4" y1="265.9" x2="45" y2="265.9"/>
+                          <line class="st3" x1="43.9" y1="267" x2="39.8" y2="274"/>
+                          <line class="st3" x1="52.6" y1="282.7" x2="46.8" y2="291.5"/>
+                          <line class="st3" x1="46.2" y1="292.1" x2="36.9" y2="295"/>
+                          <line class="st3" x1="35.7" y1="295" x2="37.5" y2="299"/>
+                          <line class="st3" x1="54.9" y1="282.7" x2="60.8" y2="288.6"/>
+                        </g>
+                      </g>
+                      <g id="Layer_3">
+                      </g>
+                </svg>
+
+           </div> 
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 offset-3">
+
+        <a href="mailto:loganlitman@gmail.com"><button class="btn btn-one" type="button">Have a Question?</button></a>
+
+      </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+<br /><br>
+      <div class="content row about">
+          <div class="col-sm-12 offset-3">      
+            <h3 id="about">About</h3>
+            <p id="about-text">I'm interested in Graphic Design & Front-end Development. <br>
+              I have a passion for brand development and visual identities and love to work on projects that embody that.
+              <br><br>
+                I'm a 22 year old student soon to graduate my Media Theory and Production dual diploma/degree.
+                <br>
+                Other than extreme-binge watching on Netflix (is that a hobby?), and my two dogs, <br>I enjoy 
+                bettering my skills on Adobe applications and working. I want to be the best! <br>(And you can 
+                probably help me get there so <a href="mailto:loganlitman@hotmail.com">let's talk!</a>)
+              <br /><br />
+               <b>EDUCATION</b><br />
+                Media Information & Technoculture, Western University. Class of 2019
+                <br />
+                Interactive Media Design, Fanshawe College. Class of 2019
+                <br /><br />
+                <b class="title">WORK EXPERIENCE</b>
+                <br />
+                Graphic Design & Digital Marketing Analysist Intern, Dealer-FX. Summer 2017 & 2018.
+                <br />
+                Graphic Design Freelance work, 2017 - present.
+                <a href="freelance.html">Club Promotional Graphics</a> & <a href="ehpc.html">Logo and Branding Design.</a> 
+                <br>Click on the titles to view some of my personal work)
+                <br><br>
+                <b class="title">SKILLS</b>
+                <br>
+                ADOBE & Other Programs<br>
+                PhotoShop, XD, Illustrator, After Effects, InDesign, Cinema 4D<br>
+                CODING<br>
+                HTML, CSS, Sass, JavaScript, PHP, Boostrap, Foundation
+            </p>
+          </div>
+        </div>
+  
+        <br><br><br>
+
+    <video id="video" class="video-fluid z-depth-1" controls>
+        <source src="video/litman_logan_reel_3001.mp4" type="video/mp4">
+      </video>
+
+
+      <br /><br /><br />
+      <div class="row">
+        <div class="col-sm-12 offset-4">
+  
+          <a href="#logo"><button class="btn-slide btn btn-one" type="button">// Back to Top</button></a>
+          <br /><br />
+          
+        </div>
+      </div>
+      
+      <br /><br /><br /><br />
+      
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+<script   src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/main.js"></script>
+
+  </body>
+</html>

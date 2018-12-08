@@ -1,0 +1,167 @@
+@charset "UTF-8";
+@import '_vars';
+
+body {
+    margin:0;
+    padding:0;
+    background: url(../images/bg-video-red.mp4);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Raleway, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#header {
+    float: right;
+} 
+
+ul li {
+    padding-right: 20px;
+}
+
+ul li a {
+    color: $text-grey;
+    display: inline;
+    text-decoration: none;
+}
+
+#navbarSupportedContent {
+    font-size: 15px;
+}
+
+#header ul li a:hover
+{
+    border-bottom: 1px solid red;
+}
+
+h1, p {
+    color: grey;;
+    float: center;
+    font-family: Raleway Light, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h3 {
+    color: red;
+    font-family: Raleway Light, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.skills {
+    color: red;
+    margin-left: 1px;
+}
+
+#infographic {
+    width: 275px;
+    margin-left: -20px;
+}
+
+.button {
+    color: grey;
+    font-size: 15px;
+    border: 0.5px solid red;
+    padding: 10px;
+    background: none;
+}
+
+.button:hover {
+    cursor: pointer;
+    color: red;
+    border: 0.5px solid grey;
+    border-radius: 10px;
+    transition: ease-in .2s;
+}
+
+
+.icon {
+    color: grey;
+}
+
+.form {
+    color: grey;
+}
+
+.form textarea, .form input
+{
+	width: 500px;
+	height: 50px;
+	background-color: transparent;
+	border: 1px solid red;
+}
+
+#message textarea, #message input {
+    width: 500px;
+	height: 210px;
+	background-color: transparent;
+	border: 1px solid red;
+}
+
+#email {
+    margin-top: -80px;
+}
+
+  .worktext a {
+    color: red;
+    font-size: 15px;
+    font-family: Raleway, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .worktext h5 {
+      color: grey;
+      font-size: 15px;
+      font-family: Raleway, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+main h1 {
+    text-align: center;
+    margin-top: 70px;
+    font-family: 'Droid Sans', sans-serif;
+    color: #58595a;
+}
+
+main p.page-description {
+    text-align: center;
+    margin: 30px auto;
+    font-size: 18px;
+    color: #85878c;
+}
+
+.freelance {
+    color: black;
+
+}
+
+.lsfc {
+    color: #ffaa00;
+}
+
+.pv {
+    color: #800080;
+}
+
+.sl {
+    color: #000080;
+}
+
+.thermo {
+    color: #0099e6;
+}
+
+
+@media screen and (max-width: 1255px) {
+    #email {
+        margin-top: 10px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .form textarea, .form input {
+        width: 400px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    #message textarea, #message input {
+        width: 400px;
+    }
+  }

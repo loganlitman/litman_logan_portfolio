@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+	<title>Logan Litman</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet"> <!--FONT-->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet" type="text/css"> <!--SASS CSS-->
+  <script   src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap-reboot.min.css">
+  <link src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
+  <style>
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: white;
+        opacity: 0.98;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+    
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: -40px;
+    }
+    
+    .overlay a {
+        font-family: Raleway, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding: 8px;
+        text-decoration: none;
+        font-size: 20px;
+        color: grey;
+        display: block;
+        transition: 0.3s;
+    }
+    
+    .overlay a:hover, .overlay a:focus {
+        color: #001487;
+    }
+    
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+    
+    @media screen and (max-height: 450px) {
+      .overlay a {font-size: 20px}
+      .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+      }
+    }
+    
+    .hamburger {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0; 
+        float: right;
+        cursor: pointer;
+        padding-top: 7px;
+        padding-right: 15px;
+    }
+    
+</style>
+    
+    <body>
+
+        <img src="images/litman_logan_logo.svg" width="300px" id="logo">
+    
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="index.html">About</a>
+        <a href="work.html">My Work</a>
+        <p><a class="mailto" href="purevolume.html">Pure Volume Media</a>
+          <a class="mailto" href="lsfc.html">London Squash & Fitness Club</a>
+          <a class="mailto" href="sl.html">StreamLine Water Bottle</a>
+          <a class="mailto" href="ehpc.html">Elite Hockey Prospect Camps</a>
+          <a class="mailto" href="freelance.html">Club Media</a>
+          <a class="mailto" href="thermosecure.html">ThermoSecure Thermostat</a>
+        </p>
+        <a href="contact.html">Contact</a>
+        <p><a class="mailto" href="mailto:loganlitman@gmail.com">Like what you see? Let's collaborate.</a><br />
+        <a class="mailto"href="https://www.linkedin.com/in/logan-litman-070b49145/"><img class="icon" src="images/linkedin.png" alt="twitter" width="10" height="10"> &nbsp;Let's connect.</a>
+        </p>
+
+        <p class="by">Made with love, by Logan Litman</p>
+      </div>
+    </div>
+    
+    <span class="hamburger" onclick="openNav()"><img src="images/hamburger-lines.png" width="30"></span>
+    
+    <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    </script>
+
+</head>
+
+    <br /><br />
+
+
+        <div class="row">
+            <div class="col-sm-10 offset-1">
+              <p class="lsfc"><b>London Squash & Fitness Club Redesign and Rebrand, London, ON.</b></p>
+              <p class="about">In December of 2017, the London Squash & Fitness Club approached Fanshawe, in hopes of the students 
+                redesigning and rebranding their current (very outdated) website. This was a team project, so I got together
+                with a partner and we began. This project was two months long, so we wanted to give LSFC a complete makeover.
+                <br /><br />
+                Our inspiration for this project was to take their white and green site, that looked as if it were designed 
+                decades ago, and give it a modern, dark, and sporty feel. For that reason we chose a very dark grey, and the clubs
+                pre-existing gold colour as our primary colour palette. We produced unique images that showcased the intense 
+                competitiveness of the club, as well as a sleek, dark website that embodied the same ideas. 
+                Below are some assets from the site & brand we created. A full scroll-through of the site can also be seen on my 
+                reel <a href="index.html">here.</a>
+                <br /><br />
+              </p>
+            </div>
+          </div>
+      
+      
+          <div class="container align-items-center imgs">
+            <div>
+            <img src="images/lsfc/lsfc2.png" width="550" height="375">
+            <img src="images/lsfc/lsfc.png" width="550">
+            </div>
+
+          <div>
+              <img src="images/lsfc/lsfc3.png" width="550" height="400">
+              <img src="images/lsfc/lsfc5.png" width="550" height="400">
+          </div>
+      
+          <div>
+           <img src="images/lsfc/lsfc4.jpg" width="1105" class="lsfcposter">
+          </div>
+          </div>
+      
+      <br /><br /><br />
+           
+                            
+
+<a class="prev-button" href="purevolume.html"> // Previous Project</a>
+<a class="next-button" href="sl.html">Next Project //</a><br /><br />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+<script   src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/main.js"></script>
+
+  </body>
+</html>

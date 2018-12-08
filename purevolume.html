@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+	<title>Logan Litman</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet"> <!--FONT-->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet" type="text/css"> <!--SASS CSS-->
+  <script   src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap-reboot.min.css">
+  <link src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
+  <style>
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: white;
+        opacity: 0.98;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+    
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: -40px;
+    }
+    
+    .overlay a {
+        font-family: Raleway, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding: 8px;
+        text-decoration: none;
+        font-size: 20px;
+        color: grey;
+        display: block;
+        transition: 0.3s;
+    }
+    
+    .overlay a:hover, .overlay a:focus {
+        color: #001487;
+    }
+    
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+    
+    @media screen and (max-height: 450px) {
+      .overlay a {font-size: 20px}
+      .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+      }
+    }
+    
+    .hamburger {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0; 
+        float: right;
+        cursor: pointer;
+        padding-top: 7px;
+        padding-right: 15px;
+    }
+    
+</style>
+    
+    <body>
+
+        <img src="images/litman_logan_logo.svg" width="300px" id="logo">
+    
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="index.html">About</a>
+        <a href="work.html">My Work</a>
+        <p><a class="mailto" href="purevolume.html">Pure Volume Media</a>
+          <a class="mailto" href="lsfc.html">London Squash & Fitness Club</a>
+          <a class="mailto" href="sl.html">StreamLine Water Bottle</a>
+          <a class="mailto" href="ehpc.html">Elite Hockey Prospect Camps</a>
+          <a class="mailto" href="freelance.html">Club Media</a>
+          <a class="mailto" href="thermosecure.html">ThermoSecure Thermostat</a>
+        </p>
+        <a href="contact.html">Contact</a>
+        <p><a class="mailto" href="mailto:loganlitman@gmail.com">Like what you see? Let's collaborate.</a><br />
+        <a class="mailto"href="https://www.linkedin.com/in/logan-litman-070b49145/"><img class="icon" src="images/linkedin.png" alt="twitter" width="10" height="10"> &nbsp;Let's connect.</a>
+        </p>
+
+        <p class="by">Made with love, by Logan Litman</p>
+      </div>
+    </div>
+    
+    <span class="hamburger" onclick="openNav()"><img src="images/hamburger-lines.png" width="30"></span>
+    
+    <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    </script>
+
+</head>
+
+    <br /><br />
+
+
+        <div class="row">
+            <div class="col-sm-10 offset-1">
+              <p class="pv"><b>PureVolume Pop Culture News Outlet Redesign and Rebrand, London, ON.</b></p>
+              <p class="about">As a student in the Interactive Media program at Fanshawe College, each year a different client 
+                 approaches the college in hopes of the students redesigning them something they wont forget.
+                 in September of 2018, I got together with some other classmates (Developers) and rebranded and designed PureVolume.
+                 <br /> <br />
+                 PureVolume is a media news company, (similar to E news or People), that users rely on 
+                 for their daily dose of pop gossip. Right off the bat, we wanted to showcase something different,
+                 and that begins with a different color - one that people don't see used everyday in design.
+                 We decided to use tones of purple and have the brand (the logo, video, and everything else that represents it) 
+                 exhibit soundwaves. Below is what my group members and I came up with.
+              </p><br />
+            </div>
+          </div>
+      
+      
+          <div class="container align-items-center imgs">
+            
+        <div>
+          <img src="images/pv/pv7.png" width="550">
+          <img src="images/pv/pv5.png" width="550" height="412">
+        </div>
+
+        <div class="video-sec">
+          <video src="images/pv/desktop.mp4" width="550" height="310" id="vid" muted autoplay controls></video>
+          <img src="images/pv/pv6.png" width="550" height="310">
+          </div>
+
+        <div>
+          <img src="images/pv.png" width="1100" class="lsfcposter">
+        </div>
+
+            <div>
+                <img src="images/pv/pv3.jpg" width="550" height="200">
+                <img src="images/pv/pv2.png" width="550" height="200">
+            </div>
+        </div>
+      
+      <br /><br />
+            
+              
+
+<a class="prev-button" href="thermosecure.html"> // Previous Project</a>
+<a class="next-button" href="lsfc.html">Next Project //</a><br /><br />
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+<script   src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/main.js"></script>
+
+  </body>
+</html>
